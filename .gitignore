@@ -1,0 +1,15 @@
+*pycache*
+
+/__pycache__/*
+
+*.jpg
+
+*.png
+
+*.bmp
+
+*.env
+
+*.sqlite3
+
+venv
