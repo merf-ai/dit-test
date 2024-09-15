@@ -1,0 +1,6 @@
+id,username,first_name,last_name,email,middle_name,birth_date
+a1b2c3d4-e5f6-7g8h-i9j0-k1l2m3n4o5p6,user1,Иван,Иванов,ivan.ivanov@example.com,Иванович,1990-01-15
+b2c3d4e5-f6g7-h8i9-j0k1-l2m3n4o5p6q7,user2,Мария,Петрова,maria.petrova@example.com,Сергеевна,1985-03-22
+c3d4e5f6-g7h8-i9j0-k1l2-m3n4o5p6q7r8,user3,Олег,Сидоров,oleg.sidorov@example.com,Алексеевич,1992-06-30
+d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8s9,user4,Елена,Кузнецова,elena.kuznetsova@example.com,Викторовна,1988-09-05
+e5f6g7h8-i9j0-k1l2-m3n4-o5p6q7r8s9t0,user5,Анна,Васильева,anna.vasilyeva@example.com,Петровна,1995-12-11

@@ -2,8 +2,6 @@
 
 /__pycache__/*
 
-*.jpg
-
 *.png
 
 *.bmp
@@ -13,3 +11,5 @@
 *.sqlite3
 
 venv
+
+*.sqlite3-journal

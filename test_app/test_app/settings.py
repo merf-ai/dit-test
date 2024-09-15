@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-obnc=@21!y1$ovnp%&96%$ev=o&5-ighqcu4zn!9gtsc8520!u
 DEBUG = True
 
 ALLOWED_HOSTS = []
-AUTH_USER_MODEL = "room_booking_service.CustomUserModels"
+AUTH_USER_MODEL = "room_booking_service.CustomUser"
 
 # Application definition
 
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "room_booking_service",
+    "test_app",
 ]
 
 MIDDLEWARE = [
