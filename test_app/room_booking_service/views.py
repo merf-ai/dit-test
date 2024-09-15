@@ -1,9 +1,11 @@
-from rest_framework.generics import ListAPIView
-from .serializers import UserRoomSerializer
+from rest_framework.generics import CreateAPIView, ListAPIView
+from rest_framework.views import APIView
+from .serializers import ReserveRoomSerializer, UserRoomSerializer
 from .models import UserRoom
 from .filters import DataBookingFilter
 from test_app.pagination import StandardResultsSetPagination
 from .utils import RoomUserRepository
+from rest_framework.permissions import IsAuthenticated
 
 
 # Create your views here.
@@ -25,3 +27,14 @@ class RoomBookingScheduleView(ListAPIView):
         user_room_rep = RoomUserRepository
         response.data["is_free"] = user_room_rep.get_room_is_free(room_pk)
         return response
+
+
+class ReserveRoomView(CreateAPIView):
+    serializer_class = ReserveRoomSerializer
+    permission_classes = (IsAuthenticated,)
+
+
+class GetReportBookingRoom(APIView):
+
+    def get(self, request, *args, **kwargs):
+        pass
