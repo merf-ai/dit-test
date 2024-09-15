@@ -37,6 +37,6 @@ class RoomImagesManyToMany(UUIDModel):
 class UserRoom(UUIDModel):
     room = models.ForeignKey(Room, on_delete=models.PROTECT)
     user = models.ForeignKey(CustomUser, on_delete=models.PROTECT)
-    start_date = models.DateField(verbose_name="Дата начала бронирования")
-    end_date = models.DateField(verbose_name="Дата конца бронирования")
+    start_date = models.DateTimeField(verbose_name="Дата начала бронирования")
+    end_date = models.DateTimeField(verbose_name="Дата конца бронирования")
     purpose_booking = models.TextField()
